@@ -1,0 +1,13 @@
+
+.categoty-navigation-header{
+    background-color: rgb(107, 104, 104);
+    color: white;
+    text-align: center;
+    height: 30px;
+}
+.cat-nav{
+    margin-left: 12%;
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}

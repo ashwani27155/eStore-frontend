@@ -1,0 +1,99 @@
+.side-nav {
+    width: 250px;
+    background-color: #f8f9fa;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    flex: 0 0 30%; 
+    background-color: #f0f0f0;
+    padding: 20px;
+}
+
+.side-nav h3 {
+    font-size: 1.5em;
+    margin-bottom: 1em;
+    color: #333;
+}
+
+.accordion {
+    display: flex;
+    flex-direction: column;
+}
+
+.accordion-item {
+    margin-bottom: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    overflow: hidden;
+    transition: all 0.3s ease;
+}
+
+.accordion-button {
+    width: 100%;
+    padding: 12px;
+    text-align: left;
+    background-color: #fff;
+    border: none;
+    font-size: 1.1em;
+    font-weight: bold;
+    color: #333;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: background-color 0.3s;
+}
+
+.accordion-button:hover {
+    background-color: #e9ecef;
+}
+
+.accordion-button.collapsed::after {
+    content: '';
+    font-size: 1.2em;
+    color: #555;
+}
+
+.accordion-button:not(.collapsed)::after {
+    content: '';
+    font-size: 1.2em;
+    color: #555;
+}
+
+.accordion-collapse {
+    background-color: #f9f9f9;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease;
+}
+
+.accordion-collapse.show {
+    max-height: 500px;
+    transition: max-height 0.5s ease;
+}
+
+.accordion-body {
+    padding: 10px 15px;
+    color: #555;
+}
+
+.accordion-body ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.accordion-body ul li {
+    margin-bottom: 8px;
+}
+
+.accordion-body ul li a {
+    text-decoration: none;
+    color: #007bff;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+.accordion-body ul li a:hover {
+    color: #0056b3;
+}

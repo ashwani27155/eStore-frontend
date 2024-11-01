@@ -1,0 +1,5 @@
+.product-comp{
+    flex: 0 0 70%; /* 70% width */
+    background-color: #e0e0e0;
+    padding: 20px;
+}
